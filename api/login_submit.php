@@ -27,5 +27,6 @@ $_SESSION['full_name'] = $row['full_name'];
 $_SESSION['email'] = $row['email'];
 
 $response = array("success" => true, "message" => "Login successful!");
+
 echo json_encode($response);
 mysqli_close($conn);
